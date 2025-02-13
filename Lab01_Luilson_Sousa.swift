@@ -11,5 +11,6 @@ struct ContentView: View {
     @State private var currentNumber = Int.random(in: 1...100)
     @State private var isCorrect: Bool? = nil
     @State private var correctCount = 0
+    @State private var wrongCount = 0
     }
 }
