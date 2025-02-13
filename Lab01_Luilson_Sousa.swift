@@ -5,4 +5,9 @@
 //  Created by Luilson Marcos Sousa dos Reis on 2025-02-13.
 //
 
-import Foundation
+import SwiftUI
+
+struct ContentView: View {
+    @State private var currentNumber = Int.random(in: 1...100)
+    }
+}

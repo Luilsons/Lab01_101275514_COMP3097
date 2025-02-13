@@ -14,6 +14,7 @@
 		8833701C2D5EB32700B2DD1A /* Lab01_Luilson_SousaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8833701B2D5EB32700B2DD1A /* Lab01_Luilson_SousaTests.swift */; };
 		883370262D5EB32700B2DD1A /* Lab01_Luilson_SousaUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 883370252D5EB32700B2DD1A /* Lab01_Luilson_SousaUITests.swift */; };
 		883370282D5EB32700B2DD1A /* Lab01_Luilson_SousaUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 883370272D5EB32700B2DD1A /* Lab01_Luilson_SousaUITestsLaunchTests.swift */; };
+		883370352D5EBAF100B2DD1A /* Lab01_Luilson_Sousa.swift in Sources */ = {isa = PBXBuildFile; fileRef = 883370342D5EBAF100B2DD1A /* Lab01_Luilson_Sousa.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,6 +46,7 @@
 		883370212D5EB32700B2DD1A /* Lab01_Luilson_SousaUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Lab01_Luilson_SousaUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		883370252D5EB32700B2DD1A /* Lab01_Luilson_SousaUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Lab01_Luilson_SousaUITests.swift; sourceTree = "<group>"; };
 		883370272D5EB32700B2DD1A /* Lab01_Luilson_SousaUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Lab01_Luilson_SousaUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		883370342D5EBAF100B2DD1A /* Lab01_Luilson_Sousa.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Lab01_Luilson_Sousa.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,6 +77,7 @@
 		88336FFD2D5EB32500B2DD1A = {
 			isa = PBXGroup;
 			children = (
+				883370342D5EBAF100B2DD1A /* Lab01_Luilson_Sousa.swift */,
 				883370082D5EB32500B2DD1A /* Lab01_Luilson_Sousa */,
 				8833701A2D5EB32700B2DD1A /* Lab01_Luilson_SousaTests */,
 				883370242D5EB32700B2DD1A /* Lab01_Luilson_SousaUITests */,
@@ -261,6 +264,7 @@
 			files = (
 				8833700C2D5EB32500B2DD1A /* ContentView.swift in Sources */,
 				8833700A2D5EB32500B2DD1A /* Lab01_Luilson_SousaApp.swift in Sources */,
+				883370352D5EBAF100B2DD1A /* Lab01_Luilson_Sousa.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
