@@ -12,5 +12,6 @@ struct ContentView: View {
     @State private var isCorrect: Bool? = nil
     @State private var correctCount = 0
     @State private var wrongCount = 0
+    @State private var attempts = 0
     }
 }
