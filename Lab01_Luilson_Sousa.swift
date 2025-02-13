@@ -9,5 +9,6 @@ import SwiftUI
 
 struct ContentView: View {
     @State private var currentNumber = Int.random(in: 1...100)
+    @State private var isCorrect: Bool? = nil
     }
 }
