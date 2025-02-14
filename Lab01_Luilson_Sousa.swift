@@ -13,5 +13,9 @@ struct ContentView: View {
     @State private var correctCount = 0
     @State private var wrongCount = 0
     @State private var attempts = 0
-    }
+    @State private var showDialog = false
+    @State private var timerRunning = true
+    
+    let timer = Timer.publish(every: 5, on: .main, in: .common).autoconnect()
 }
+
