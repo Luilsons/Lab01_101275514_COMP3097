@@ -36,8 +36,17 @@ struct ContentView: View {
                             .font(.headline)
                             .foregroundColor(.black)
                     }
-                    .onReceive(timer) { _ in
+                .onReceive(timer) { _ in
                         if timerRunning {
-                            
-                        }
+                            wrongCount += 1
+                                           processNextStep()
+                                       }
+                                   }
+                .alert("Game Over", isPresented: $showDialog) {
+                    Button("OK", action: resetGame)
+                } message: {
+                    Text("Final Score:\nCorrect: \(correctCount)\nWrong: \(wrongCount)")
+                                   }
+                               }
+                                                       }
 
