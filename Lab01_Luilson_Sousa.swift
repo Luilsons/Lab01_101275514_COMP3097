@@ -20,6 +20,9 @@ struct ContentView: View {
     
     var body: some View {
         VStack(spacing: 20) {
+            Text("\(currentNumber)")
+                        .font(.system(size: 80, weight: .bold))
+                        .foregroundColor(.blue)
             
         }
 
