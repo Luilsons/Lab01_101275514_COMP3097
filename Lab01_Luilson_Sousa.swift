@@ -87,6 +87,14 @@ struct ContentView: View {
 #Preview {
     ContentView()
 }
-            }
+
+@main
+struct Lab1_Luilson_SousaApp: App {
+    var body: some Scene {
+        WindowGroup {
+            ContentView()
+        }
+    }
+}
                                                              
 
