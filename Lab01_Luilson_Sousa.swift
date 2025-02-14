@@ -32,6 +32,12 @@ struct ContentView: View {
                                .font(.title)
                                .foregroundColor(.blue)
                        }
-                       
-        }
+            Text("Correct: \(correctCount) | Wrong: \(wrongCount)")
+                            .font(.headline)
+                            .foregroundColor(.black)
+                    }
+                    .onReceive(timer) { _ in
+                        if timerRunning {
+                            
+                        }
 
