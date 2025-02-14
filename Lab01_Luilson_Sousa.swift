@@ -17,5 +17,9 @@ struct ContentView: View {
     @State private var timerRunning = true
     
     let timer = Timer.publish(every: 5, on: .main, in: .common).autoconnect()
-}
+    
+    var body: some View {
+        VStack(spacing: 20) {
+            
+        }
 
