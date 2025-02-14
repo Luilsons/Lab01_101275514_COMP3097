@@ -55,6 +55,18 @@ struct ContentView: View {
         }
         return true
     }
-}
+    
+    func checkAnswer(isPrime: Bool) {
+          timerRunning = false
+          let correct = isPrime == isNumberPrime(currentNumber)
+          if correct {
+              correctCount += 1
+          } else {
+              wrongCount += 1
+          }
+          attempts += 1
+          processNextStep()
+      }
+      }
                                                              
 
