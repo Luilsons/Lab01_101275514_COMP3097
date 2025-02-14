@@ -24,5 +24,14 @@ struct ContentView: View {
                         .font(.system(size: 80, weight: .bold))
                         .foregroundColor(.blue)
             
+            HStack(spacing: 50) {
+                           Button("Prime") { checkAnswer(isPrime: true) }
+                               .font(.title)
+                               .foregroundColor(.blue)
+                           Button("Not Prime") { checkAnswer(isPrime: false) }
+                               .font(.title)
+                               .foregroundColor(.blue)
+                       }
+                       
         }
 
