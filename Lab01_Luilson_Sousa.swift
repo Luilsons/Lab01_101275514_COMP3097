@@ -72,7 +72,11 @@ struct ContentView: View {
             if attempts >= 10 {
                 showDialog = true
             } else {
-                
+                currentNumber = Int.random(in: 1...100)
+                timerRunning = true
+            }
+        }
+        
             }
                                                              
 
