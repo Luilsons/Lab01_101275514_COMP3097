@@ -77,6 +77,13 @@ struct ContentView: View {
             }
         }
     func resetGame() {
+        correctCount = 0
+               wrongCount = 0
+               attempts = 0
+               currentNumber = Int.random(in: 1...100)
+               timerRunning = true
+           }
+       }
             }
                                                              
 
