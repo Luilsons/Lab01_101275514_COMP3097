@@ -67,6 +67,12 @@ struct ContentView: View {
           attempts += 1
           processNextStep()
       }
-      }
+    
+    func processNextStep() {
+            if attempts >= 10 {
+                showDialog = true
+            } else {
+                
+            }
                                                              
 
