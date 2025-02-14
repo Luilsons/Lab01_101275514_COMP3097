@@ -84,6 +84,9 @@ struct ContentView: View {
                timerRunning = true
            }
        }
+#Preview {
+    ContentView()
+}
             }
                                                              
 
