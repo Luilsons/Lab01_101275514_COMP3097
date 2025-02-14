@@ -21,32 +21,40 @@ struct ContentView: View {
     var body: some View {
         VStack(spacing: 20) {
             Text("\(currentNumber)")
-                        .font(.system(size: 80, weight: .bold))
-                        .foregroundColor(.blue)
+                .font(.system(size: 80, weight: .bold))
+                .foregroundColor(.blue)
             
             HStack(spacing: 50) {
-                           Button("Prime") { checkAnswer(isPrime: true) }
-                               .font(.title)
-                               .foregroundColor(.blue)
-                           Button("Not Prime") { checkAnswer(isPrime: false) }
-                               .font(.title)
-                               .foregroundColor(.blue)
-                       }
+                Button("Prime") { checkAnswer(isPrime: true) }
+                    .font(.title)
+                    .foregroundColor(.blue)
+                Button("Not Prime") { checkAnswer(isPrime: false) }
+                    .font(.title)
+                    .foregroundColor(.blue)
+            }
             Text("Correct: \(correctCount) | Wrong: \(wrongCount)")
-                            .font(.headline)
-                            .foregroundColor(.black)
-                    }
-                .onReceive(timer) { _ in
-                        if timerRunning {
-                            wrongCount += 1
-                                           processNextStep()
-                                       }
-                                   }
-                .alert("Game Over", isPresented: $showDialog) {
-                    Button("OK", action: resetGame)
-                } message: {
-                    Text("Final Score:\nCorrect: \(correctCount)\nWrong: \(wrongCount)")
-                                   }
-                               }
-                                                       }
+                .font(.headline)
+                .foregroundColor(.black)
+        }
+        .onReceive(timer) { _ in
+            if timerRunning {
+                wrongCount += 1
+                processNextStep()
+            }
+        }
+        .alert("Game Over", isPresented: $showDialog) {
+            Button("OK", action: resetGame)
+        } message: {
+            Text("Final Score:\nCorrect: \(correctCount)\nWrong: \(wrongCount)")
+        }
+    }
+    func isNumberPrime(_ num: Int) -> Bool {
+        if num < 2 { return false }
+        for i in 2..<num {
+            if num % i == 0 { return false }
+        }
+        return true
+    }
+}
+                                                             
 
