@@ -76,7 +76,7 @@ struct ContentView: View {
                 timerRunning = true
             }
         }
-        
+    func resetGame() {
             }
                                                              
 
